@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css"></link>
+	<script src="p5.min.js"></script>
+	<script src="p5.dom.min.js"></script>
+	<script src="blockly_compressed.js"></script>
+	<script src="blocks_compressed.js"></script>
+	<script src="code/javascript_compressed.js"></script>	
+	<script src="blocks_custom.js"></script>
+	<script src="blocks_custom_config.js"></script>
+	<script src="msg/js/en.js"></script>
+	<script src="shapes/Command.js"></script>
+	<script src="shapes/Segment.js"></script>
+	<script src="shapes/Circle.js"></script>
+	<script src="shapes/Rectangle.js"></script>
+	<script src="shapes/Polygon.js"></script>
+	<script src="main.js"></script>
+	<script src="sketch.js"></script>
+	
+</head>
+<body>
+	<div id="blocklyDiv" style="height:720px;width:600px;float:left;"></div>
+	<div style="float:left;">
+		<textarea readonly id="codeArea" style="height:592px;width:250px;"></textarea><br>
+		<td><button class="primary" title="View the Javascript source code here" id="viewCode">View source code</button>
+		</td>
+	</div>
+	<div id="draw" style="float:left;"></div>
+	
+	<xml id="toolbox" style="display: none">
+		<category name="Controls" colour="210">
+			<block type="controls_for"></block>
+			<block type="controls_if"></block>
+		</category>
+		<category name="Shapes" colour="20">
+			<block type="shape"></block>
+		</category>
+		<category name="Commands" colour="150">
+				<block type="forward"></block>
+				<block type="backward"></block>
+				<block type="pencolour"></block>
+				<block type="rotate"></block>
+			</category>
+		<category name="Operation" colour="400">
+			<block type="math_arithmetic"></block>
+			<block type="logic_operation"></block>
+		</category>
+		<category name="Values" colour="90">
+			<block type="text"></block>
+			<block type="logic_boolean"></block>
+			<block type="math_number"></block>
+			<!--<block type="colour_picker"></block>-->
+			<!--<block type="colour_rgb"></block>-->
+			<block type="colour"></block>
+			<block type="lists_create_with"></block>
+		</category>
+		<category name="Variables" colour="340" custom="VARIABLE"></category>
+	</xml>
+
+</body>
+</html>
